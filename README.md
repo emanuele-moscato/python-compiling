@@ -12,7 +12,7 @@ For system-wide installed modules, the compiling is done once when installing, n
 
 The `compiling.py` script can be run with simple command line arguments that determine whether the module `utils.py` is imported or not. To have it imported, the first command line argument must be one among `utils`, `import` or `import_utils`, in all other cases the module is not imported.
 
-Make sure that no `.__pycache__/` directory is present in the directory of the script (e.g. on Linux or MacOS, open the command line, navigate to the folder and execute `ls`). If it is present, on Linux and Mac you can delete it with `rm -rf __pycache__/`.
+Make sure that no `__pycache__/` directory is present in the directory of the script (e.g. on Linux or MacOS, open the command line, navigate to the folder and execute `ls`). If it is present, on Linux and Mac you can delete it with `rm -rf __pycache__/`.
 
 Run the script: you'll notice that if the module is imported then the directory is indeed created, and it will contain a binary file corresponding to the compiled version of the imported module.
 
