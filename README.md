@@ -16,6 +16,19 @@ Make sure that no `__pycache__/` directory is present in the directory of the sc
 
 Run the script: you'll notice that if the module is imported then the directory is indeed created, and it will contain a binary file corresponding to the compiled version of the imported module.
 
+### Manually compiling Python code
+
+If you want to generate a compiled binary file starting from a Python script, you can do it by running
+```
+python -m compileall [file_name]
+```
+This will create a compiled version of your script inside the `__pycache__` directory (which is created if it didn't exist previously).
+
+The compiled binary file can be executed with
+```
+python [binary_name]
+```
+
 ### More info
 
 - Using `sys.argv`: https://www.pythonforbeginners.com/system/python-sys-argv
